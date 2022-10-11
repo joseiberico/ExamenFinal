@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* para q las weas no se salgan de su caja*/
+    
+}
+body{
+
+	background-image: url("2.jpg");
+	background-size: cover;
+	
+	
+}
+.contenedor{
+	width: 100%;
+    font-weight: 300;
+    justify-content: center;
+	align-items: center;
+    display: flex;
+    flex-wrap: wrap;/*hace que los hijos no se salgan de la caja*/
+  /*  align-content: flex-start; /*aparece todo desde arriba*/
+    position: absolute;
+    min-height: 100vh;
+
+   
+}
+/*.izquierda{
+	width: 50%;
+	min-height: 99vh;
+	border-color: blueviolet;
+	float: left;	
+	border-width: 3px;
+	border-style: solid;
+	box-sizing: border-box;
+	display: flex;
+	box-sizing: border-box;
+}*/
+/*.derecha{
+	width: 50%;
+	box-sizing: border-box;
+	min-height: 90vh;
+	float: right;
+	
+}*/
+.formulario{
+	position: absolute;	
+	max-width: 90%;
+	box-sizing: border-box;
+	width: 70%;
+	min-height: 75vh;
+	box-shadow: 0px 0px 50px 20px ;	
+	justify-content: center;
+	align-items: center;
+}
+.derecha{
+	position: relative;
+	width: 50%;
+	float: right;
+	min-height: 74vh;
+	box-sizing: border-box;
+	flex-wrap: wrap;	
+}
+.izquierda{
+	position: relative;
+	width: 50%;
+	float: left;
+	min-height: 74vh;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+.izquierda h1{
+color: white;
+font-family: sans-serif;
+font-size: 4em;
+padding-bottom: 40px;
+box-sizing: border-box;
+cursor: default;
+
+}
+.izquierda span{
+color: white;
+cursor: default;
+}
+.izquierda h2{
+	font-family: sans-serif;
+	margin-left: 120px;
+	margin-top: 200px;
+	color: white;
+	cursor: default;
+}
+.content{
+	position: relative;
+	max-width: 200px;
+	width: 100%;
+	margin-top: 250px;
+	margin-left: 125px;
+	box-sizing: border-box;
+}
+.containerLogin{
+	display: flex;
+	max-width: 600px;
+	width: 100%;
+	height: 400px;
+	margin-top: 40%;
+	margin-left: 10%;
+	position: relative;
+	flex-direction: column;
+	row-gap: 10px;	
+	background-color: #ffffff1f;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.title{
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
+	cursor: default;
+}
+.ingreso{
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.contentUser{
+	margin-top: 50px;
+	box-sizing: border-box;
+	position: relative;
+	box-sizing: border-box;	
+}
+.primero{
+	margin-bottom: 50px;
+}
+.segundo{
+	margin-bottom: 50px
+}
+/*.contentLabel{
+	box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    width: 100%;
+    transition: .1s transform;
+}*/
+
+
+/*.contentInput{
+	appearance: none;
+    
+    border: none;
+    display: block;
+    font-size: 1rem;
+    width: 50%;
+    height: 50%;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif; 
+    background-color: var(--background-base,#ffffff);
+    box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
+    
+}*/
+
+.enlace{
+	box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+.enlace:hover{
+	text-decoration: underline black;
+}
+
+/*boton*/
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center;
+	font-family:consolas;
+	width:100%;
+	align-content: center;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.form{
+		width: 100%;
+		height: 50px;
+		max-width: 400px;
+		position: relative;		
+	}
+
+/*Inputs*/
+.ga{
+	width: 100%;
+	height: 100%;
+	background: none;
+	color: #fff;
+	padding-top: 20px;
+	border: none;
+	outline: 0px;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.lbl-nombre{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #c7c7c7;
+	font-family: 'Open Sans', sans-serif;
+}
+.lbl-nombre:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid #2ecece;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+.text-nomb{
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	transition: all 0.3s ease;
+	color: #fff;
+}
+.ga:focus + .lbl-nombre .text-nomb{
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #2ecece;
+}
+.ga:valid + .lbl-nombre .text-nomb{
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #2ecece;
+}
+.ga:focus + .lbl-nombre:after, .ga:valid + .lbl-nombre:after{
+	transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form{
+	width:85%;
+}
+}
