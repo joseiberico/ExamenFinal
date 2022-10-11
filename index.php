@@ -2,13 +2,7 @@
 include_once 'includes/templates/header.php'
 ?>
 
-<?php
-session_start();
-require_once('assets/funcion/funcion.php');
-if (!isLogged()) {
-    header('location:index.php');
-}
-?>
+
 
   <!-- Content Wrapper. Contains page content -->
  
